@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/_patterns.scss",
+		"../scss/_reset.scss",
+		"../scss/_mixins.scss",
+		"../scss/_header.scss",
+		"../scss/_home.scss"
+	],
+	"sourcesContent": [
+		"@import 'patterns';\n@import 'reset';\n@import 'mixins';\n@import 'header';\n@import 'home';",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
