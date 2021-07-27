@@ -1,0 +1,134 @@
+// HERO
+#hero{
+    margin-top: 11.1rem;
+    .container{
+        padding: 0;
+        position: relative;
+        @include flex(column, center, none);
+        .hero-txt{
+            @include flex(column, center, none);
+            width: 100%;
+            max-width: 74.3rem;
+            text-align: center;
+            h2{
+                position: relative;
+                span{
+                    color: $clr-red;
+                    font-size: 4rem;
+                        ont-weight: 800;
+                    line-height: 5.4rem;
+                    letter-spacing: -0.03em;
+                }
+                img{
+                    position: absolute;
+                    bottom: -1.8rem;
+                    right: 2.7rem;
+                }
+            }
+            p{
+                width: 100%;
+                max-width: 55.4rem;
+                margin-top: 3rem;
+            }
+        }
+        .hero-img{
+            display: flex;
+            justify-content: center;
+            margin-top: 10.5rem;
+            width: 100%;
+            max-width: 93.8rem;
+            .seta{
+                position: absolute;
+                left: 0;
+                bottom: 28.2rem;
+            }
+        }
+    }
+}
+
+// SOBRE
+#sobre{
+    margin-top: 17.3rem;
+    .container{
+        @include flex(row, center, space-between);
+        border: 1px solid red;
+        .sobre-left{
+            @include flex(row, center, space-between);
+            width: 100%;
+            max-width: 51rem;
+            .sobre-left-txt{
+                margin-left: 4.3rem;
+                h3{
+                    margin: 2.4rem 0 3.2rem 0;
+                    width: 32.9rem;
+                }
+                img{
+                    width: 2.2rem; 
+                    margin-bottom: -6px;
+                }
+                .pad{
+                    margin-bottom: 3rem;
+                }
+                button{
+                    margin-top: 3.2rem;
+                }
+            }
+        }
+        .sobre-right{
+            border: 1px solid red;
+            display: flex;
+            .habilidades{
+                margin-right: 8.9rem;
+                ul{
+                    margin-top: 1.5rem;
+                    li{
+                        display: flex;
+                        &:not(:last-child){
+                            margin-bottom: 1rem;
+                        }
+                        span{
+                            @include typography($clr-gray, 600, 3rem, 0.03em);
+                            margin-left: 1.6rem;
+                        }
+                    }
+                }
+            }
+            .cursos{
+                ul{
+                    margin-top: 1.5rem;
+                    li{
+                        &:not(:last-child){
+                            margin-bottom: 1rem;
+                        }
+                        a{
+                            @include typography($clr-gray, 600, 3rem, 0.03em);
+                            margin-left: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PROJETOS
+#projetos{
+    margin-top: 30rem;
+    .container{
+        .projetos-top{
+            p{
+                margin: 3.2rem 0 4.6rem 0;
+            }
+        }
+        .projetos-bottom{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            a{
+                width: 37rem;
+                height: 37rem;
+                position: relative;
+            }
+        }
+    }
+}

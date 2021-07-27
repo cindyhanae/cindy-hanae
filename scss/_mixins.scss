@@ -10,3 +10,10 @@
     align-items: $align;
     justify-content: $justify;
 };
+
+@mixin typography($color, $weight, $height, $spacing){
+    color: $color;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}

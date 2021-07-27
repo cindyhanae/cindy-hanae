@@ -1,0 +1,33 @@
+header{
+    padding-top: 4.2rem;
+    .container{
+        @include flex(row, center, space-between);
+        .logo{
+            @include flex(row, center, none);
+            .logo{
+                margin-right: 5rem;
+            }
+        }
+        nav{
+            width: 100%;
+            max-width: 28.4rem;
+            ul{
+                @include flex(row, center, space-between);
+                li{
+                    display: flex;
+                    a{
+                        color: $white;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        line-height: 3rem;
+                        letter-spacing: 0.03em;
+                        transition: color .6s ease-out;
+                        &:hover{
+                            color: $clr-purple;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
