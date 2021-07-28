@@ -51,7 +51,6 @@
     margin-top: 17.3rem;
     .container{
         @include flex(row, center, space-between);
-        border: 1px solid red;
         .sobre-left{
             @include flex(row, center, space-between);
             width: 100%;
@@ -75,7 +74,6 @@
             }
         }
         .sobre-right{
-            border: 1px solid red;
             display: flex;
             .habilidades{
                 margin-right: 8.9rem;
@@ -87,7 +85,7 @@
                             margin-bottom: 1rem;
                         }
                         span{
-                            @include typography($clr-gray, 600, 3rem, 0.03em);
+                            @include typography($clr-gray, 600, 3rem, 0.03em, 1.6rem);
                             margin-left: 1.6rem;
                         }
                     }
@@ -101,7 +99,7 @@
                             margin-bottom: 1rem;
                         }
                         a{
-                            @include typography($clr-gray, 600, 3rem, 0.03em);
+                            @include typography($clr-gray, 600, 3rem, 0.03em, 1.6rem);
                             margin-left: 1.6rem;
                         }
                     }
@@ -124,10 +122,83 @@
             display: flex;
             flex-wrap: wrap;
             gap: 3rem;
-            a{
+            .box{
                 width: 37rem;
                 height: 37rem;
                 position: relative;
+                .details{
+                    background-color: $clr-purple;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    transform: translateX(-50px);
+                    opacity: 0;
+                    transition: all .5s ease;
+                    .box-content{
+                        max-width: 25.9rem;
+                        margin: 9.9rem auto;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        opacity: 0;
+                        transition: all .5s ease .2s;
+                        h3{
+                            @include typography($white, 700, 3.6rem, -0.03em, 3rem);
+                        }
+                        p{
+                           font-size: 1.4rem;
+                           line-height: 2.4rem;
+                           margin: 0.8rem 0 3.5rem;
+                        }
+                        a{
+                            span{
+                                @include typography($white, 700, 1.8rem, 0.02em, 1.5rem)
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    .details{
+                        transform: translateX(0px);
+                        opacity: 1;
+                        .box-content{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// CONTATO/FOOTER
+footer{
+    padding: 20rem 0 8.1rem 0;
+    .container{
+        .seta-contato{
+            padding-bottom: 15.7rem;
+        }
+        .contato-txt{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .contato-info{
+                p{
+                    margin: 1.8rem 0 1.5rem 0;
+                }
+                .here{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2.1rem;
+                    span{
+                        @include typography($white, 600, 3rem, 0.03em,1.6rem);
+                        margin-left: 1rem;
+                    }
+                }
             }
         }
     }

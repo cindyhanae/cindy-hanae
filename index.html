@@ -8,6 +8,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
@@ -36,7 +39,7 @@
          <!-- HERO -->
          <section id="hero">
             <div class="container">
-                <div class="hero-txt">
+                <div class="hero-txt" data-aos="fade">
                     <h2>
                         Sou uma <span>< dev-front-end-jr /></span> que ajuda a dar vida aos seus projetos web.
                         <img src="./assets/lines.svg" alt="Linhas">
@@ -45,8 +48,8 @@
                     <p>Olá, eu sou a Cindy! Uma ex-estudante de direito que virou desenvolvedora. Te conto abaixo como isso aconteceu : )</p>
                 </div>
                 <div class="hero-img">
-                     <img src="./assets/arrow.svg" alt="Seta para baixo" class="seta">
-                     <img src="./assets/hero.svg" alt="Imagem tablet e celular" class="image">
+                     <img src="./assets/arrow.svg" alt="Seta para baixo" class="seta" data-aos="fade-right">
+                     <img src="./assets/hero.svg" alt="Imagem tablet e celular" class="image" data-aos="fade-up">
                 </div>
             </div>
          </section>
@@ -54,7 +57,7 @@
          <!-- SOBRE MIM -->
          <section id="sobre">
             <div class="container">
-                <div class="sobre-left">
+                <div class="sobre-left" data-aos="fade-right">
                     <img src="./assets/aside.svg" alt="Detalhe lateral">
                     <div class="sobre-left-txt">
                         <h1>Sobre mim</h1>
@@ -68,7 +71,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="sobre-right">
+                <div class="sobre-right" data-aos="fade-left">
                     <div class="habilidades">
                         <h3>Habilidades</h3>
                         <ul>
@@ -131,35 +134,118 @@
                      <p>Alguns projetos freelancer ou desenvolvidos para cursos e etc e tal.</p>
                  </div>
                  <div class="projetos-bottom">
-                    <a href="">
-                        <img src="./assets/finans.svg" alt="">
-                    </a>
+                     <!-- projeto1 -->
+                     <div class="box">
+                         <div class="box-img">
+                            <img src="./assets/finans.svg" alt="">
+                        </div>
+                        <div class="details">
+                            <div class="box-content">
+                                <h3>Finans</h3>
+                                <p>Página desenvolvida para o curso de Desenvolvimento Web da Udemy com objetivo de aprimorar as habilidades de CSS e HTML.</p>
+                                <a href="#">
+                                    <img src="./assets/acesse.svg" alt="Ícone de acesso">
+                                    <span>Acesse a página</span>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+
+                     <!-- PROJETO 2  -->
+                     <div class="box">
+                        <div class="box-img">
+                           <img src="./assets/spotify.svg" alt="">
+                       </div>
+                       <div class="details">
+                           <div class="box-content">
+                               <h3>Finans</h3>
+                               <p>Página desenvolvida para o curso de Desenvolvimento Web da Udemy com objetivo de aprimorar as habilidades de CSS e HTML.</p>
+                               <a href="#">
+                                   <img src="./assets/acesse.svg" alt="Ícone de acesso">
+                                   <span>Acesse a página</span>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+
+                    <!-- PROJETO 3 -->
+                    <div class="box">
+                        <div class="box-img">
+                           <img src="./assets/sunnyside.svg" alt="">
+                       </div>
+                       <div class="details">
+                           <div class="box-content">
+                               <h3>Finans</h3>
+                               <p>Página desenvolvida para o curso de Desenvolvimento Web da Udemy com objetivo de aprimorar as habilidades de CSS e HTML.</p>
+                               <a href="#">
+                                   <img src="./assets/acesse.svg" alt="Ícone de acesso">
+                                   <span>Acesse a página</span>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+
+                    <!-- PROJETO 4 -->
+                    <div class="box">
+                        <div class="box-img">
+                           <img src="./assets/finans.svg" alt="">
+                       </div>
+                       <div class="details">
+                           <div class="box-content">
+                               <h3>Finans</h3>
+                               <p>Página desenvolvida para o curso de Desenvolvimento Web da Udemy com objetivo de aprimorar as habilidades de CSS e HTML.</p>
+                               <a href="#">
+                                   <img src="./assets/acesse.svg" alt="Ícone de acesso">
+                                   <span>Acesse a página</span>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+
+                    <!-- PROJETO 5 -->
+                    <div class="box">
+                        <div class="box-img">
+                           <img src="./assets/spotify.svg" alt="">
+                       </div>
+                       <div class="details">
+                           <div class="box-content">
+                               <h3>Finans</h3>
+                               <p>Página desenvolvida para o curso de Desenvolvimento Web da Udemy com objetivo de aprimorar as habilidades de CSS e HTML.</p>
+                               <a href="#">
+                                   <img src="./assets/acesse.svg" alt="Ícone de acesso">
+                                   <span>Acesse a página</span>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+
+                    <!-- PROJETO 6 -->
+                    <div class="box">
+                        <div class="box-img">
+                           <img src="./assets/sunnyside.svg" alt="">
+                       </div>
+                       <div class="details">
+                           <div class="box-content">
+                               <h3>Finans</h3>
+                               <p>Página desenvolvida para o curso de Desenvolvimento Web da Udemy com objetivo de aprimorar as habilidades de CSS e HTML.</p>
+                               <a href="#">
+                                   <img src="./assets/acesse.svg" alt="Ícone de acesso">
+                                   <span>Acesse a página</span>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
                     
-                    <a href="">
-                        <img src="./assets/spotify.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./assets/sunnyside.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./assets/finans.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./assets/spotify.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./assets/sunnyside.svg" alt="">
-                    </a>
                  </div>
              </div>
          </section>
 
-         <!-- CONTATO -->
+         <!-- CONTATO / FOOTER-->
          <footer id="contato">
             <div class="container">
-                <img src="./assets/arrow.svg" alt="Seta">
+                <img src="./assets/arrow.svg" alt="Seta" class="seta-contato" data-aos="fade-down">
                 <div class="contato-txt">
-                    <div class="contato-info">
+                    <div class="contato-info" data-aos="fade-up">
                         <h1>Contato</h1>
                         <p>Atualmente disponível para trabalho freelancer ou full-time.</p> 
                         <div class="here">
@@ -176,12 +262,21 @@
                             </a>
                         </div>
                     </div>
-                    <img src="./assets/wave.svg" alt="Ícone ondulação ">
+                    <img src="./assets/wave.svg" alt="Ícone ondulação" data-aos="fade">
                 </div>
 
             </div>
         </footer>
      </main>
+
+     <!-- Animate JS -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <script>
+        AOS.init({
+            duration: 1000,
+        });
+      </script>
     
 </body>
 </html> 

@@ -11,9 +11,10 @@
     justify-content: $justify;
 };
 
-@mixin typography($color, $weight, $height, $spacing){
+@mixin typography($color, $weight, $height, $spacing, $size){
     color: $color;
     font-weight: $weight;
     line-height: $height;
     letter-spacing: $spacing;
+    font-size: $size;
 }
