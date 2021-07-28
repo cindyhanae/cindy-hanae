@@ -24,21 +24,54 @@
             </div>
 
             <nav>
-                 <ul>
+                 <ul class="ul-header">
                      <li><a href="#sobre">Sobre</a></li>
-                     <li><img src="./assets/dot.svg" alt="Ícone ponto"></li>
+                     <li><img src="./assets/dot.svg" alt="Ícone ponto" class="dot"></li>
                      <li><a href="#projetos">Projetos</a></li>
-                     <li><img src="./assets/dot.svg" alt="Ícone ponto"></li>
+                     <li><img src="./assets/dot.svg" alt="Ícone ponto" class="dot"></li>
                      <li><a href="#contato">Contato</a></li>
                  </ul>
-
-                 <!-- HAMBURGER -->
-                 <div class="burger" onclick="toggleMenu()">
-                     <div class="bar1"></div>
-                     <div class="bar2"></div>
-                     <div class="bar3"></div>
-                 </div>
             </nav>
+            
+            <!-- HAMBURGER -->
+            <div class="burger" onclick="toggleMenu()">
+                <div class="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="#sobre">
+                            <img src="./assets/dot-bg.svg" alt="Ponto">
+                            <span>Sobre</span>
+                        </a></li>
+                        <li><a href="#sobre">
+                            <img src="./assets/dot-bg.svg" alt="Ponto">
+                            <span>Projetos</span>
+                        </a></li>
+                        <li><a href="#contato">
+                            <img src="./assets/dot-bg.svg" alt="Ponto">
+                            <span>Contato</span>
+                        </a></li>
+                    </ul>
+
+                    <img src="./assets/wave-vertical.svg" alt="Ondulação vertical" class="wave-vertical">
+
+                    <div class="contato-menu">
+                        <div class="here-menu">
+                            <img src="./assets/mail.svg" alt="E-mail">
+                            <span>cindy.hanae1@gmail.com</span>
+                        </div>
+                        <div class="here-menu">
+                            <img src="./assets/download.svg" alt="E-mail">
+                            <span>Download currículo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
         </div>
     </header>
 

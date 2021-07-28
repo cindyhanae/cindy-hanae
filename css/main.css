@@ -135,10 +135,11 @@ button {
 
 /* line 1, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
 header {
-  padding-top: 4.2rem;
+  height: 8.7rem;
+  display: flex;
 }
 
-/* line 3, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+/* line 4, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
 header .container {
   display: flex;
   flex-direction: row;
@@ -146,7 +147,7 @@ header .container {
   justify-content: space-between;
 }
 
-/* line 5, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+/* line 6, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
 header .container .logo {
   display: flex;
   flex-direction: row;
@@ -154,107 +155,173 @@ header .container .logo {
   justify-content: none;
 }
 
-/* line 7, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+/* line 8, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
 header .container .logo .logo {
   margin-right: 5rem;
 }
 
-/* line 11, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+/* line 12, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
 header .container nav {
   width: 100%;
   max-width: 28.4rem;
 }
 
-/* line 14, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav ul {
+/* line 15, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+header .container nav .ul-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 16, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav ul li {
+/* line 17, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+header .container nav .ul-header li {
   display: flex;
 }
 
-/* line 18, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav ul li a {
+/* line 19, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+header .container nav .ul-header li a {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 3rem;
   letter-spacing: 0.03em;
-  transition: color .6s ease-out;
+  transition: color .5s ease-out;
 }
 
-/* line 25, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav ul li a:hover {
-  color: #753DDB;
+/* line 26, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+header .container nav .ul-header li a:hover {
+  color: #FF5F5F;
 }
 
-/* line 31, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger {
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* line 34, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger .bar1, header .container nav .burger .bar2, header .container nav .burger .bar3 {
-  height: 4px;
-  background-color: white;
-  margin: 6px;
-  transition: all .3s ease;
-}
-
-/* line 40, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger .bar1 {
-  width: 30px;
-}
-
-/* line 43, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger .bar2 {
-  width: 23px;
-  margin-left: auto;
-}
-
-/* line 47, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger .bar3 {
-  width: 15px;
-  margin-left: auto;
-}
-
-/* line 52, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger.active .bar1 {
-  transform: rotateZ(45deg) translateY(14px);
-}
-
-/* line 55, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger.active .bar2 {
-  opacity: 0;
-}
-
-/* line 58, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
-header .container nav .burger.active .bar3 {
-  width: 30px;
-  transform: rotateZ(-45deg) translateY(-15px);
+/* line 33, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+header .container .burger {
+  display: none;
 }
 
 @media (max-width: 731px) {
-  /* line 67, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  /* line 39, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
   header .container .logo .wave {
     display: none;
+  }
+  /* line 43, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container nav {
+    display: none;
+  }
+  /* line 46, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  /* line 50, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .bars .bar1, header .container .burger .bars .bar2, header .container .burger .bars .bar3 {
+    height: 4px;
+    background-color: white;
+    margin: 6px 0 6px auto;
+    transition: all .3s ease;
+  }
+  /* line 56, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .bars .bar1 {
+    width: 30px;
+  }
+  /* line 59, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .bars .bar2 {
+    width: 23px;
+  }
+  /* line 62, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .bars .bar3 {
+    width: 15px;
+  }
+  /* line 66, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .bars.active .bar1 {
+    transform: translateY(10px) rotateZ(45deg);
+  }
+  /* line 69, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .bars.active .bar2 {
+    opacity: 0;
+  }
+  /* line 72, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .bars.active .bar3 {
+    width: 30px;
+    transform: translateY(-10px) rotateZ(-45deg);
+  }
+  /* line 78, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile {
+    background-color: #131421;
+    padding: 0 1.6rem 3.2rem 1.6rem;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 8.7rem;
+    transform: translateX(400px);
+    transition: all .3s linear;
+  }
+  /* line 89, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile ul li:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+  /* line 92, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile ul li a {
+    display: flex;
+  }
+  /* line 94, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile ul li a span {
+    color: #fff;
+    font-weight: 500;
+    line-height: 3.2rem;
+    letter-spacing: -0.03em;
+    font-size: 2.3rem;
+    margin-left: 1.6rem;
+  }
+  /* line 101, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile .wave-vertical {
+    margin: 8.1rem 0;
+  }
+  /* line 105, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile .contato-menu .here-menu {
+    display: flex;
+  }
+  /* line 107, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile .contato-menu .here-menu:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  /* line 110, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile .contato-menu .here-menu span {
+    color: #fff;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: 0.03em;
+    font-size: 1.6rem;
+    margin-left: 8px;
+  }
+  /* line 116, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile.active {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 441px) {
+  /* line 125, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .logo a img {
+    width: 100%;
+    max-width: 15rem;
+  }
+  /* line 132, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_header.scss */
+  header .container .burger .menu-mobile {
+    width: 100%;
+    height: 100%;
+    padding-left: 4.5rem;
   }
 }
 
 /* line 2, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #hero {
-  margin-top: 11.1rem;
+  margin-top: 9.8rem;
 }
 
 /* line 4, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #hero .container {
-  padding: 0;
+  padding: 0 1.5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -313,16 +380,64 @@ header .container nav .burger.active .bar3 {
 /* line 40, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #hero .container .hero-img .seta {
   position: absolute;
-  left: 0;
+  left: 1.5rem;
   bottom: 28.2rem;
 }
 
-/* line 50, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+@media (max-width: 890px) {
+  /* line 2, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero {
+    margin-top: 10.5rem;
+  }
+  /* line 50, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-txt {
+    max-width: 58.9rem;
+  }
+  /* line 53, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-txt h2 img {
+    right: 16rem;
+  }
+  /* line 58, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-img {
+    max-width: 57.2rem;
+  }
+  /* line 60, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-img .seta {
+    display: none;
+  }
+}
+
+@media (max-width: 441px) {
+  /* line 2, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero {
+    margin-top: 7.7rem;
+  }
+  /* line 71, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-txt h2 span {
+    font-size: 2.3rem;
+  }
+  /* line 74, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-txt h2 img {
+    max-width: 13.5rem;
+    right: 10rem;
+    bottom: -1.2rem;
+  }
+  /* line 80, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-txt p {
+    margin-top: 4rem;
+  }
+  /* line 84, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+  #hero .container .hero-img {
+    margin-top: 4rem;
+  }
+}
+
+/* line 92, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre {
   margin-top: 17.3rem;
 }
 
-/* line 52, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 94, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container {
   display: flex;
   flex-direction: row;
@@ -330,7 +445,7 @@ header .container nav .burger.active .bar3 {
   justify-content: space-between;
 }
 
-/* line 54, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 96, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-left {
   display: flex;
   flex-direction: row;
@@ -340,59 +455,59 @@ header .container nav .burger.active .bar3 {
   max-width: 51rem;
 }
 
-/* line 58, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 100, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-left .sobre-left-txt {
   margin-left: 4.3rem;
 }
 
-/* line 60, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 102, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-left .sobre-left-txt h3 {
   margin: 2.4rem 0 3.2rem 0;
   width: 32.9rem;
 }
 
-/* line 64, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 106, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-left .sobre-left-txt img {
   width: 2.2rem;
   margin-bottom: -6px;
 }
 
-/* line 68, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 110, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-left .sobre-left-txt .pad {
   margin-bottom: 3rem;
 }
 
-/* line 71, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 113, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-left .sobre-left-txt button {
   margin-top: 3.2rem;
 }
 
-/* line 76, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 118, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right {
   display: flex;
 }
 
-/* line 78, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 120, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .habilidades {
   margin-right: 8.9rem;
 }
 
-/* line 80, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 122, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .habilidades ul {
   margin-top: 1.5rem;
 }
 
-/* line 82, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 124, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .habilidades ul li {
   display: flex;
 }
 
-/* line 84, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 126, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .habilidades ul li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-/* line 87, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 129, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .habilidades ul li span {
   color: #A9A9A9;
   font-weight: 600;
@@ -402,17 +517,17 @@ header .container nav .burger.active .bar3 {
   margin-left: 1.6rem;
 }
 
-/* line 95, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 137, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .cursos ul {
   margin-top: 1.5rem;
 }
 
-/* line 98, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 140, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .cursos ul li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-/* line 101, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 143, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #sobre .container .sobre-right .cursos ul li a {
   color: #A9A9A9;
   font-weight: 600;
@@ -422,31 +537,31 @@ header .container nav .burger.active .bar3 {
   margin-left: 1.6rem;
 }
 
-/* line 113, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 155, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos {
   margin-top: 30rem;
 }
 
-/* line 117, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 159, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-top p {
   margin: 3.2rem 0 4.6rem 0;
 }
 
-/* line 121, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 163, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
 }
 
-/* line 125, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 167, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box {
   width: 37rem;
   height: 37rem;
   position: relative;
 }
 
-/* line 129, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 171, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box .details {
   background-color: #753DDB;
   position: absolute;
@@ -459,7 +574,7 @@ header .container nav .burger.active .bar3 {
   transition: all .5s ease;
 }
 
-/* line 139, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 181, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box .details .box-content {
   max-width: 25.9rem;
   margin: 9.9rem auto;
@@ -472,7 +587,7 @@ header .container nav .burger.active .bar3 {
   transition: all .5s ease .2s;
 }
 
-/* line 149, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 191, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box .details .box-content h3 {
   color: #fff;
   font-weight: 700;
@@ -481,14 +596,14 @@ header .container nav .burger.active .bar3 {
   font-size: 3rem;
 }
 
-/* line 152, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 194, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box .details .box-content p {
   font-size: 1.4rem;
   line-height: 2.4rem;
   margin: 0.8rem 0 3.5rem;
 }
 
-/* line 158, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 200, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box .details .box-content a span {
   color: #fff;
   font-weight: 700;
@@ -497,47 +612,47 @@ header .container nav .burger.active .bar3 {
   font-size: 1.5rem;
 }
 
-/* line 165, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 207, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box:hover .details {
   transform: translateX(0px);
   opacity: 1;
 }
 
-/* line 168, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 210, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 #projetos .container .projetos-bottom .box:hover .details .box-content {
   opacity: 1;
 }
 
-/* line 179, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 221, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 footer {
   padding: 20rem 0 8.1rem 0;
 }
 
-/* line 182, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 224, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 footer .container .seta-contato {
   padding-bottom: 15.7rem;
 }
 
-/* line 185, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 227, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 footer .container .contato-txt {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-/* line 190, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 232, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 footer .container .contato-txt .contato-info p {
   margin: 1.8rem 0 1.5rem 0;
 }
 
-/* line 193, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 235, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 footer .container .contato-txt .contato-info .here {
   display: flex;
   align-items: center;
   margin-bottom: 2.1rem;
 }
 
-/* line 197, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
+/* line 239, ../../../../../Users/cindysasaki/Documents/Meus projetos/cindy-hanae/scss/_home.scss */
 footer .container .contato-txt .contato-info .here span {
   color: #fff;
   font-weight: 600;

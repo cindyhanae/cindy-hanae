@@ -1,5 +1,6 @@
 header{
-    padding-top: 4.2rem;
+    height: 8.7rem;
+    display: flex;
     .container{
         @include flex(row, center, space-between);
         .logo{
@@ -11,7 +12,7 @@ header{
         nav{
             width: 100%;
             max-width: 28.4rem;
-            ul{
+            .ul-header{
                 @include flex(row, center, space-between);
                 li{
                     display: flex;
@@ -21,51 +22,117 @@ header{
                         font-weight: 600;
                         line-height: 3rem;
                         letter-spacing: 0.03em;
-                        transition: color .6s ease-out;
+                        transition: color .5s ease-out;
                         &:hover{
-                            color: $clr-purple;
+                            color: $clr-red;
                         }
                     }
                 }
             }
-            .burger{
-                display: inline-block;
-                cursor: pointer;
-                .bar1, .bar2, .bar3{
-                    height: 4px;
-                    background-color: white;
-                    margin: 6px;
-                    transition: all .3s ease;
-                }
-                .bar1{
-                    width: 30px;
-                }
-                .bar2{
-                    width: 23px;
-                    margin-left: auto;
-                }
-                .bar3{
-                    width: 15px;
-                    margin-left: auto;
-                }
-                &.active{
-                    .bar1{
-                        transform: rotateZ(45deg) translateY(14px);
-                    }
-                    .bar2{
-                        opacity: 0;
-                    }
-                    .bar3{
-                        width: 30px;
-                        transform: rotateZ(-45deg) translateY(-15px);
-                    }
-                }
-            }
         }
+        .burger{
+            display: none;
+        }
+
         @include responsive(731px){
             .logo{
                 .wave{
                     display: none;
+                }
+            }
+            nav{
+                display: none;
+            }
+            .burger{
+                display: inline-block;
+                cursor: pointer;
+                .bars{
+                    .bar1, .bar2, .bar3{
+                        height: 4px;
+                        background-color: white;
+                        margin: 6px 0 6px auto;
+                        transition: all .3s ease;
+                    }
+                    .bar1{
+                        width: 30px;
+                    }
+                    .bar2{
+                        width: 23px;
+                    }
+                    .bar3{
+                        width: 15px;
+                    }
+                    &.active{
+                        .bar1{
+                            transform: translateY(10px) rotateZ(45deg);
+                        }
+                        .bar2{
+                            opacity: 0;
+                        }
+                        .bar3{
+                            width: 30px;
+                            transform: translateY(-10px) rotateZ(-45deg);
+                        }
+                    }
+                }
+                .menu-mobile{
+                    background-color: $clr-black-dark;
+                    padding: 0 1.6rem 3.2rem 1.6rem;
+                    position: absolute;
+                    z-index: 100;
+                    right: 0;
+                    top: 8.7rem;
+                    transform: translateX(400px);
+                    transition: all .3s linear;
+                    ul{
+                        li{
+                            &:not(:last-child){
+                                margin-bottom: 4.8rem;
+                            }
+                            a{
+                                display: flex;
+                                span{
+                                    @include typography($white, 500, 3.2rem, -0.03em, 2.3rem);
+                                    margin-left: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                    .wave-vertical{
+                        margin: 8.1rem 0;
+                    }
+                    .contato-menu{
+                        .here-menu{
+                            display: flex;
+                            &:not(:last-child){
+                                margin-bottom: 8px;
+                            }
+                            span{
+                                @include typography($white, 600, 3rem, 0.03em, 1.6rem);
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                    &.active{
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+        @include responsive(441px){
+            .logo{
+                a{
+                    img{
+                        width: 100%;
+                        max-width: 15rem;
+                    }
+                }
+            }
+            .burger{
+                .menu-mobile{
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 4.5rem;
                 }
             }
         }

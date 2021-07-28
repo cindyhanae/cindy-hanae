@@ -1,3 +1,4 @@
 function toggleMenu(){
-    document.querySelector('.burger').classList.toggle('active');
+    document.querySelector('.bars').classList.toggle('active');
+    document.querySelector('.menu-mobile').classList.toggle('active');
 }
