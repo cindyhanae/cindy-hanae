@@ -1,115 +1,129 @@
  // VARIABLES
-$black: #000;
-$white: #fff;
+ $black: #000;
+ $white: #fff;
 
-$clr-red: #FF5F5F;
-$clr-purple: #753DDB;
-$clr-gradient: linear-gradient(102.27deg, #753DDB 7.94%, #E54E73 93.35%);
-$clr-gray: #A9A9A9;
-$clr-black-dark: #131421; 
+ $clr-red: #FF5F5F;
+ $clr-purple: #753DDB;
+ $clr-gradient: linear-gradient(102.27deg, #753DDB 7.94%, #E54E73 93.35%);
+ $clr-gray: #A9A9A9;
+ $clr-black-dark: #131421;
 
-// TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+ // TYPOGRAPHY
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
 
-h1, h2, h3, h4, p{
-    color: $white;
-}
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+     color: $white;
+ }
 
-h1, h2{
-    font-weight: 800;
-    letter-spacing: -0.03em;
-}
+ h1,
+ h2 {
+     font-weight: 800;
+     letter-spacing: -0.03em;
+ }
 
-h1{
-    font-size: 8rem;
-    line-height: 6.4rem;
-    @include responsive(400px){
-        font-size: 5rem;
-    }
-}
+ h1 {
+     font-size: 8rem;
+     line-height: 6.4rem;
 
-h2{
-    font-size: 4rem;
-    line-height: 5.4rem;
-    @include responsive(641px){
-        font-size: 3.5rem;
-    }
-    @include responsive(400px){
-        font-size: 2.3rem;
-        line-height: 3.2rem;
-    }
-}
+     @include responsive(400px) {
+         font-size: 5rem;
+     }
+ }
 
-h3{
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.8rem;
-    @include responsive(400px){
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-    }
-}
+ h2 {
+     font-size: 4rem;
+     line-height: 5.4rem;
 
-h4{
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 2.6rem;
-}
+     @include responsive(641px) {
+         font-size: 3.5rem;
+     }
 
-p{
-    line-height: 3rem;
-    letter-spacing: -0.02em;
-}
+     @include responsive(400px) {
+         font-size: 2.3rem;
+         line-height: 3.2rem;
+     }
+ }
 
-// BUTTONS 
-.btn{
-    @include flex(row, center, center);
-    gap: 1rem;
-    background-color: $clr-red;
-    border: none;
-    border-radius: 1.6rem;
-    line-height: 6.1rem;
-    padding: 0rem 3.4rem;
-    transition: background-color .3s ease;
-    a{
-        color: $white;
-        font-size: 1.4rem;
-        font-weight: 800;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-    &:hover{
-        background-color: $clr-purple;
-    }
-}
+ h3 {
+     font-size: 1.8rem;
+     font-weight: 500;
+     line-height: 2.8rem;
 
-// GRID-CONTAINER
-.container{
-    width: 100%;
-    max-width: 121.8rem;
-    padding: 0  2.4rem;
-    margin: 0 auto;
-    @include responsive(990px){
-        padding: 0 4.5rem;
-    }
-    @include responsive(441px){
-        padding: 0 2.4rem; 
-    }
-}
+     @include responsive(400px) {
+         font-size: 1.8rem;
+         line-height: 2.8rem;
+     }
+ }
 
-// ANCHOR TAG
-.link{
-    color: $white;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    transition: color .3s ease;
-    &:hover{
-        color: $clr-red;
-    }
-}
+ h4 {
+     font-size: 1.6rem;
+     font-weight: 600;
+     line-height: 2.6rem;
+ }
 
-a{
-    &:hover{
-        color: $clr-red;
-    }
-}
+ p {
+     line-height: 3rem;
+     letter-spacing: -0.02em;
+ }
+
+ // BUTTONS 
+ .btn {
+     @include flex(row, center, center);
+     gap: 1rem;
+     background-color: $clr-red;
+     border: none;
+     border-radius: 1.6rem;
+     line-height: 6.1rem;
+     padding: 0rem 3.4rem;
+     transition: background-color .3s ease;
+
+     a {
+         color: $white;
+         font-size: 1.4rem;
+         font-weight: 800;
+         letter-spacing: 0.05em;
+         text-transform: uppercase;
+     }
+
+     &:hover {
+         background-color: $clr-purple;
+     }
+ }
+
+ // GRID-CONTAINER
+ .container {
+     width: 100%;
+     max-width: 121.8rem;
+     padding: 0 2.4rem;
+     margin: 0 auto;
+
+     @include responsive(990px) {
+         padding: 0 4.5rem;
+     }
+
+     @include responsive(441px) {
+         padding: 0 2.4rem;
+     }
+ }
+
+ // ANCHOR TAG
+ .link {
+     color: $white;
+     font-weight: 600;
+     letter-spacing: 0.02em;
+     transition: color .3s ease;
+
+     &:hover {
+         color: $clr-red;
+     }
+ }
+
+ a {
+     &:hover {
+         color: $clr-red;
+     }
+ }
