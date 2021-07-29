@@ -31,6 +31,9 @@ h1{
 h2{
     font-size: 4rem;
     line-height: 5.4rem;
+    @include responsive(641px){
+        font-size: 3.5rem;
+    }
     @include responsive(400px){
         font-size: 2.3rem;
         line-height: 3.2rem;
@@ -86,6 +89,27 @@ p{
     max-width: 121.8rem;
     padding: 0  2.4rem;
     margin: 0 auto;
+    @include responsive(990px){
+        padding: 0 4.5rem;
+    }
+    @include responsive(441px){
+        padding: 0 2.4rem; 
+    }
 }
 
-// CLASSES
+// ANCHOR TAG
+.link{
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: color .3s ease;
+    &:hover{
+        color: $clr-red;
+    }
+}
+
+a{
+    &:hover{
+        color: $clr-red;
+    }
+}
