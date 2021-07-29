@@ -1,6 +1,10 @@
 // HERO
 #hero{
     margin-top: 9.8rem;
+    background: url(../assets/bg-gradient.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
     .container{
         padding: 0 1.5rem;
         position: relative;
@@ -15,7 +19,7 @@
                 span{
                     color: $clr-red;
                     font-size: 4rem;
-                        ont-weight: 800;
+                    font-weight: 800;
                     line-height: 5.4rem;
                     letter-spacing: -0.03em;
                 }
@@ -115,6 +119,16 @@
     }
 }
 
+// CONTENT
+.content{
+    background: url(../assets/bg-gradient-left.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+    @include responsive(775px){
+        background-position: center 100% left;
+    }
+}
 // SOBRE
 #sobre{
     margin-top: 17.3rem;
@@ -187,7 +201,6 @@
             align-items: flex-start;
             .sobre-left{
                 max-width: 90%;
-                border: 1px solid red;
                 .aside{
                     height: 60.7rem;
                 }
@@ -199,7 +212,6 @@
                 margin-top: 7.7rem;
                 padding-left: 3.9rem;
                 width: 90%;
-                border: 1px solid red;
                 .habilidades{
                     margin-right: 9.2rem;
                 }
@@ -380,7 +392,6 @@ footer{
                 .contato-info{
                     p{
                         margin-top: 6px; 
-                        border: 1px solid red;
                     }
                     .here{
                         &:not(:last-child){
