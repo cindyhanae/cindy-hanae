@@ -15,7 +15,10 @@ html {
     font-size: 62.5%;
     background-color: $clr-black-dark;
     scroll-behavior: smooth;
-    // overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 img {
