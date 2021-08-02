@@ -77,8 +77,9 @@ header{
                 }
                 .menu-mobile{
                     background-color: $clr-black-dark;
-                    padding: 0 1.6rem 3.2rem 1.6rem;
+                    padding: 0 3.2rem 3.2rem 3.2rem;
                     position: absolute;
+                    width: 50%;
                     z-index: 100;
                     right: 0;
                     top: 8.7rem;
@@ -107,9 +108,15 @@ header{
                             &:not(:last-child){
                                 margin-bottom: 8px;
                             }
+                            a,
                             span{
-                                @include typography($white, 600, 3rem, 0.03em, 1.6rem);
+                                @include typography($white, 600, 3rem, 0.03em,1.6rem);
                                 margin-left: 8px;
+                                transition: all .3s ease;
+                                font-style: normal;
+                                &:hover{
+                                    color: $clr-red;
+                                }
                             }
                         }
                     }
