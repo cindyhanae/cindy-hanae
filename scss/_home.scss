@@ -139,6 +139,10 @@
             width: 100%;
             max-width: 51rem;
             margin-right: 4rem;
+            height: 100%;
+            .aside{
+                height: 100%;
+            }
             .sobre-left-txt{
                 margin-left: 4.3rem;
                 h3{
@@ -188,6 +192,10 @@
                         a{
                             @include typography($clr-gray, 600, 3rem, 0.03em, 1.6rem);
                             margin-left: 1.6rem;
+                            transition: color .3s ease;
+                            &:hover{
+                                color: $clr-red;
+                            }
                         }
                     }
                 }
@@ -201,8 +209,9 @@
             align-items: flex-start;
             .sobre-left{
                 max-width: 90%;
+                // height: 100vh;
                 .aside{
-                    height: 60.7rem;
+                    // height: 100%;
                 }
                 .sobre-left-txt{
                     margin-left: 3.9rem;
@@ -304,7 +313,11 @@
                         }
                         a{
                             span{
-                                @include typography($white, 700, 1.8rem, 0.02em, 1.5rem)
+                                @include typography($white, 700, 1.8rem, 0.02em, 1.5rem);
+                                transition: color .3s ease;
+                                &:hover{
+                                    color: $clr-red;
+                                }
                             }
                         }
                     }
