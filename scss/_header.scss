@@ -77,7 +77,7 @@ header{
                 }
                 .menu-mobile{
                     background-color: $clr-black-dark;
-                    padding: 3rem 3.2rem 3.2rem 3.2rem;
+                    padding: 3rem 0 3.2rem 5rem;
                     position: absolute;
                     width: 100%;
                     z-index: 100;
@@ -87,6 +87,7 @@ header{
                     transform: translateY(400px);
                     // display: none;
                     transition: all .3s linear;
+                    border: 1px solid red;
                     ul{
                         li{
                             &:not(:last-child){
