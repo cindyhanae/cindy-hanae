@@ -129,43 +129,51 @@
         background-position: center 100% left;
     }
 }
+
 // SOBRE
 #sobre{
     margin-top: 17.3rem;
     .container{
-        @include flex(row, center, space-between);
-        .sobre-left{
-            @include flex(row, center, space-between);
+        .sobre-top{
+            margin-left: 4.6rem;
             width: 100%;
-            max-width: 51rem;
-            margin-right: 4rem;
-            height: 100%;
-            .aside{
-                height: 100%;
+            max-width: 40.2rem;
+            margin-bottom: 3.2rem;
+            h1{
+                margin-bottom: 2.4rem;
             }
-            .sobre-left-txt{
-                margin-left: 4.3rem;
-                h3{
-                    margin: 2.4rem 0 3.2rem 0;
-                    width: 32.9rem;
-                }
-                img{
-                    width: 2.2rem; 
-                    margin-bottom: -6px;
-                }
-                .pad{
-                    margin-bottom: 3rem;
-                }
-                s{
-                    text-decoration: line-through;
-                }
-                button{
-                    margin-top: 3.2rem;
-                }
+            img{
+                width: 2.2rem; 
+                margin-bottom: -6px;
             }
         }
-        .sobre-right{
-            display: flex;
+        
+        .sobre-bottom{
+            @include flex(row, flex-start, space-between);
+            height: auto;
+            position: relative;
+        }
+
+        .aside{
+            height: 100%;
+            position: absolute;
+        }
+        .sobre-bottom-left{
+            width: 100%;
+            max-width: 46.4rem;
+            position: relative;
+            margin-left: 4.3rem;
+            .pad{
+                margin-bottom: 3rem;
+            }
+            button{
+                margin-top: 3.2rem;
+            }
+        }
+
+        .sobre-bottom-right{
+            @include flex(row, flex-start, space-between);
+            margin-left: 3.2rem;
             .habilidades{
                 margin-right: 8.9rem;
                 ul{
@@ -205,57 +213,42 @@
     @include responsive(990px){
         margin-top: 18.4rem;
         .container{
-            flex-direction: column;
-            align-items: flex-start;
-            .sobre-left{
-                max-width: 90%;
-                // height: 100vh;
+            .sobre-top{
+                margin-left: 0;
+            }
+            .sobre-bottom{
+                flex-direction: column;
                 .aside{
-                    // height: 100%;
+                    display: none;
                 }
-                .sobre-left-txt{
-                    margin-left: 3.9rem;
+                .sobre-bottom-left{
+                    margin-left: 0rem;
+                    max-width: fit-content;
                 }
-            }
-            .sobre-right{
-                margin-top: 7.7rem;
-                padding-left: 3.9rem;
-                width: 90%;
-                .habilidades{
-                    margin-right: 9.2rem;
+                .sobre-bottom-right{
+                    margin-top: 7.7rem;
+                    margin-left: 0;
+                    width: 100%;
+                    .habilidades{
+                        margin-right: 0rem;
+                    }
                 }
-            }
-        }
-    }
-    @include responsive(650px){
-        .container{
-            .sobre-left{
-                max-width: 100%
-            }
-            .sobre-right{
-                width: 100%;
             }
         }
     }
     @include responsive(441px){
         margin-top: 7.6rem;
         .container{
-            .sobre-left{
-                .sobre-left-txt{
-                    margin-left: 3rem;
-                    h3{
-                        margin: 0.8rem 0 2.4rem 0;
-                        width: 28rem;
-                    }
-                    button{
-                        margin-top: 2.4rem;
-                    }
+            .sobre-bottom-left{
+                h3{
+                    margin: 0.8rem 0 2.4rem 0;
+                    width: 28rem;
                 }
-                .aside{
-                    height: 86.5rem;;
+                button{
+                    margin-top: 2.4rem;
                 }
             }
-            .sobre-right{
+            .sobre-bottom-right{
                 margin-top: 5.4rem;
                 flex-direction: column;
                 .cursos{
@@ -354,6 +347,7 @@
         margin-top: 25rem;
     }
     @include responsive(441px){
+        margin-top: 13rem;
         .container{
             .projetos-top{
                 p{
