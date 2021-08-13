@@ -87,7 +87,6 @@ header{
                     transform: translateY(400px);
                     // display: none;
                     transition: all .3s linear;
-                    border: 1px solid red;
                     ul{
                         li{
                             &:not(:last-child){
@@ -111,8 +110,7 @@ header{
                             &:not(:last-child){
                                 margin-bottom: 8px;
                             }
-                            a,
-                            span{
+                            a{
                                 @include typography($white, 600, 3rem, 0.03em,1.6rem);
                                 margin-left: 8px;
                                 transition: all .3s ease;

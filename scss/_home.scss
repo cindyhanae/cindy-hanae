@@ -414,8 +414,7 @@ footer{
                     display: flex;
                     align-items: center;
                     margin-bottom: 2.1rem;
-                    a,
-                    span{
+                    a{
                         @include typography($white, 600, 3rem, 0.03em,1.6rem);
                         margin-left: 1rem;
                         transition: all .3s ease;
