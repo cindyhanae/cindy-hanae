@@ -20,23 +20,25 @@ function openMenu(){
 bars.addEventListener('click', openMenu)
 menuItem.forEach(function(item){
     item.addEventListener('click', (event) => {
+        bars.classList.remove('active')
+        menuMobile.classList.remove('active')
+
+        if(!menuMobile.classList.contains('active')){
+            body.style.overflow = 'auto'
+        }
+
+        // smooth scroll
         const href = event.currentTarget.getAttribute('href')
         const section = document.querySelector(href)
         const topSection = section.offsetTop
 
         event.preventDefault()
-        bars.classList.remove('active')
-        menuMobile.classList.remove('active')
 
         window.scrollTo({
             top: topSection - 40,
             behavior: 'smooth'
         })
-
-
-        if(!menuMobile.classList.contains('active')){
-            body.style.overflow = 'auto'
-        }
+        
     })
 })
 contatoMenuMobile.forEach(function(item){
