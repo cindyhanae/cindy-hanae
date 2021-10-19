@@ -18,6 +18,7 @@ contatoMenuMobile.forEach(function(item){
 
 menuItem.forEach(function(item){
     item.addEventListener('click', () => {
+        bars.classList.remove('active')
         menuMobile.classList.remove('active')
 
         if(!menuMobile.classList.contains('active')){
