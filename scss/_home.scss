@@ -206,7 +206,8 @@
 
         .sobre-bottom-right{
             @include flex(row, flex-start, space-between);
-            margin-left: 3.2rem;
+						gap: 10px;
+            // margin-left: 3.2rem;
             .habilidades{
                 margin-right: 8.9rem;
                 ul{
@@ -229,6 +230,10 @@
                     li{
                         &:not(:last-child){
                             margin-bottom: 1rem;
+                        }
+                        span{
+                            @include typography($clr-gray, 600, 3rem, 0.03em, 1.6rem);
+                            margin-left: 1.6rem;
                         }
                         a{
                             @include typography($clr-gray, 600, 3rem, 0.03em, 1.6rem);
